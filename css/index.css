@@ -191,6 +191,21 @@ img {
   text-decoration: none;
   padding: 1%;
 }
+.Intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Intro div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 20%;
+}
+.Intro div h2 {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
 .home .content-section {
   margin: 30px 0;
   display: flex;
