@@ -3,8 +3,20 @@
     width: @w;
     height: @h;
 }
-.flex-layout(@jc, @ai){
+.flex-layout(@jc, @ai, @fd){
     display: flex;
     justify-content: @jc;
     align-items: @ai;
+    flex-direction: @fd;
+}
+.keyframes(@name; @arguments) {
+	@-moz-keyframes @name { @arguments(); }
+	@-webkit-keyframes @name { @arguments(); }
+	@keyframes @name { @arguments(); }
+}
+
+.animation(@arguments) {
+	-webkit-animation: @arguments;
+	-moz-animation: @arguments;
+	animation: @arguments;
 }

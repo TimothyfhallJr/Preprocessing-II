@@ -6,6 +6,9 @@
     display:flex;
     align-items: center;
     border-bottom: 1px dashed black;
+    @media @mobile {
+        .flex-layout(auto, center, column);
+    }
    
     
     h1 {
@@ -21,15 +24,16 @@
         align-items: space-evenly;
         width: 50%;
         @media @mobile {
-            flex-direction: column;
-            .flex-layout(space-evenly, center);
-            flex-wrap: nowrap;
+            .flex-layout(center, center, column);
+            
         }
 
         a {
         text-decoration: none;
             padding: 1%;
             color: black;
+        
+        
 
         }
     }
