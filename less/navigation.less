@@ -1,1 +1,40 @@
 // Navigation Styles here
+.navigation{
+    width: auto;
+    height: 20vh;
+    justify-content: space-between;
+    display:flex;
+    align-items: center;
+    border-bottom: 1px dashed black;
+    @media @mobile {
+        .flex-layout(auto, center, column);
+    }
+   
+    
+    h1 {
+        font-size: 4rem;
+        margin-left: 20%;
+        font-weight: bold;
+
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+        font-size: 2.4rem;
+        align-items: space-evenly;
+        width: 50%;
+        @media @mobile {
+            .flex-layout(center, center, column);
+            
+        }
+
+        a {
+        text-decoration: none;
+            padding: 1%;
+            color: black;
+        
+        
+
+        }
+    }
+}
